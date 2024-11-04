@@ -1,0 +1,325 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+:root {
+    --green-1: #26643b;
+    --green-2: #a2de96;
+    --lightGreen-1: #d6e5d8;
+    --lightGreen-2: #f5fcf4;
+    --black-1: #3b413a;
+    --black-2: #3f3c3c;
+    --black-3: #5b6359;
+    --white-1: #e8e8e8;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Poppins;
+}
+
+p {
+    font-family: Raleway;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* small */
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+body {
+    background-color: var(--lightGreen-2);
+}
+
+/* start header */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+@media(max-width:1200px) {
+    header .container .logo {
+        margin-left: 50px;
+    }
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul a {
+    display: block;
+    color: var(--black-1);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 30px 20px 20px 20px;
+    font-weight: 600;
+
+
+}
+
+header nav ul a:hover {
+    color: var(--green-1);
+    border-bottom: var(--green-1) 1px solid;
+
+}
+
+header nav .booking {
+    margin-top: 23px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: var(--green-1);
+    color: var(--lightGreen-2);
+    font-weight: 600;
+    transition: .3s;
+}
+
+header nav .booking:hover {
+    color: var(--lightGreen-2);
+    background-color: var(--black-3);
+    border-bottom: none;
+}
+
+/* end header */
+/* <!-- start story --> */
+.story {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.story .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+.story h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.story h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.story p {
+    color: var(--black-1);
+    font-size: 18px;
+}
+
+.story .p1 {
+    margin-bottom: 20px;
+}
+
+/*   <!-- end story --> */
+/* start goals */
+.goals {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.goals .container {
+    max-width: 800px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+}
+
+.goals h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.goals p {
+    color: var(--black-1);
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+.goals .image {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.goals .image .two .one {
+    margin-top: -125px;
+
+}
+
+.goals .image .two .twoo {
+    margin-top: -285px;
+}
+
+
+/* end goals */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start footer */
+.footer {
+    background-color: var(--lightGreen-1);
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer li a {
+    color: var(--black-1);
+    font-size: 18px;
+
+}
+
+.footer li a:hover {
+    color: var(--green-1);
+}
+
+.footer .one .logo {
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+.footer .one p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer .one h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer .one ul {
+    display: flex;
+
+}
+
+.footer .one ul li a {
+    background-color: var(--lightGreen-2);
+    margin-right: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: var(--green-1);
+}
+
+.footer .one ul li :hover {
+    background-color: var(--green-1);
+    color: var(--lightGreen-2);
+
+}
+
+.captchan {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.captchan span {
+    color: var(--green-1);
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: -5px;
+}
+
+/* end footer */
